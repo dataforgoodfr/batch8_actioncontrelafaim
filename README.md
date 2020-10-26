@@ -16,4 +16,4 @@ Objectif : construire un tableau de bord permettant le suivi des situations huma
 - `docs/` : contient la documentation du code ainsi que celle des sources de données.
 
 ## Environnement de développement
-- python 3.7
+- python 3.8.2
