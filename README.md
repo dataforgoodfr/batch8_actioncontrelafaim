@@ -17,3 +17,13 @@ Objectif : construire un tableau de bord permettant le suivi des situations huma
 
 ## Environnement de développement
 - python 3.8.2
+
+## Développement
+- Collection de chaque source dans un notebook individuel Jupyter, ce qui permet de maintenir plus aisément le code.
+- Chaque notebooks peut être converti en un script à l'aide de la commande:
+```
+# run from repository root
+jupyter nbconvert --config "./src/mycfg.py" --to script --output-dir "./src/scripts/collection/"
+```
+- Pour ignorer les cellules de tests/developpement lors de la conversion, il suffit de les marquer du tag 'dev'. 
+Les tags peuvent être activés dans les notebooks en allant à "View - Cell Toolbar - Tags".
