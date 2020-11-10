@@ -16,4 +16,21 @@ Objectif : construire un tableau de bord permettant le suivi des situations huma
 - `docs/` : contient la documentation du code ainsi que celle des sources de données.
 
 ## Environnement de développement
+### Langage
 - python 3.8.2
+- Convention PEP-8. Black est utilisé pour l'assurer dans les notebooks: l'activer avec la commande
+```
+jupyter nbextension install https://github.com/drillan/jupyter-black/archive/master.zip
+jupyter nbextension enable jupyter-black-master/jupyter-black
+```
+puis cliquer sur le bouton "Jupyter Black" en sélectionnant les cellules concernées
+ 
+### Notebooks
+- Collection de chaque source dans un notebook individuel Jupyter, ce qui permet de maintenir plus aisément le code.
+- Chaque notebooks peut être converti en un script à l'aide de la commande:
+```
+# run from repository root
+jupyter nbconvert --config "./src/mycfg.py" --to script --output-dir "./src/scripts/collection/"
+```
+- Pour ignorer les cellules de tests/developpement lors de la conversion, il suffit de les marquer du tag 'dev'. 
+Les tags peuvent être activés dans les notebooks en allant à "View - Cell Toolbar - Tags".
