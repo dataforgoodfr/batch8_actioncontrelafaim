@@ -1,4 +1,4 @@
-hdx-python-api==v4.6.7
+hdx-python-api==4.7.1
 pandas
 numpy
 jupyter
