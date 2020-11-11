@@ -30,7 +30,7 @@ puis cliquer sur le bouton "Jupyter Black" en sélectionnant les cellules concer
 - Chaque notebooks peut être converti en un script à l'aide de la commande:
 ```
 # run from repository root
-jupyter nbconvert --config "./src/mycfg.py" --to script --output-dir "./src/scripts/collection/"
+jupyter nbconvert --config "./config/notebooks_conversion_cfg.py" --to script --output-dir "./src/scripts/collection/"
 ```
 - Pour ignorer les cellules de tests/developpement lors de la conversion, il suffit de les marquer du tag 'dev'. 
 Les tags peuvent être activés dans les notebooks en allant à "View - Cell Toolbar - Tags".
